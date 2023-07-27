@@ -23,37 +23,71 @@
         </nav>
         <div class="header-text">
             <p> Aspiring Developer </p>
-            <h1>Hello, I'm <span> Lalaine Joy</span> <br> an aspiring software developer from CvSU </h1>
+            <h1>Hello, I'm <span> Lalaine Joy</span> <br> an aspiring software <br> developer from CvSU </h1>
         </div>
     </div>
 </div>
-
+<!---------about------------------------------------------------>
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
+                <img src="images/Me.png">
             </div>
-            <div class="about-col-2"></div>
+            <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum kinemerut edi wow pagod na pagod na ko lagi nalang naghahabol boset na requirements yan inang kapagod ampota</p>
-
+                <p>Lalaine Joy H. Aumentado is an aspiring Web Designer and Software Developer. Currently in her 3rd Year College at Cavite State University-Carmona Campus. 
+                She is versed in basic computer literacy and has excellent communication skills.</p>
+                
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
                 </div>
-    <div class="tab-contents">
+ <div class="tab-contents active-tab" id="Skills">
         <ul>
-            <li><span>Microsoft 365</span> </span><br>Word<br>Excel<br>Powerpoint<br>Teams</li>
-            <li><span>Excellent Communication</span> </span><br>English<br>Tagalog<br>
+            <li><span>Microsoft 365</span><br>Word<br>Excel<br>Powerpoint<br>Teams</li>
+            <li><span>Excellent Communication</span><br>English<br>Tagalog<br>
             <li><span>Programming Languages</span><br>Python<br>Java<br>HTML/CSS<br>SQL</li>
             <li><span>Programming Software</span><br>Visual Studio Code<br>Eclipse<br>Brackets<br>Git</li>
-
         </ul>
     </div>
-        </div>
+    <div class="tab-contents" id="Experience">
+        <ul>
+            <li><span>2020 - Present</span><br>Young Programmers And Developers Society<br>Secretary(Former), Vice President( Former) President</li>
+            <li><span>2019- 2020</span><br>Creotec Philippines Inc.<br>Quality Assurance Specialist</li>
+            <li><span>2018- 2020</span><br>FIAT Publication<br>Campus Journalist<br>Radio Broadcasting</li>
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="Education">
+        <ul>
+            <li><span>Cavite State University- Carmona Campus</span><br>2020- Present<br>Bachelor of Science in Computer Science</li>
+            <li><span>University of Perpetual Help System-<br>JONELTA Campus</span><br>2018-2020<br>Science, Technology, Engineering and Mathematics (STEM) strand</li>        
+        </ul>
+    </div>
+
+ </div>
     </div>
 </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+    }
+    event.currentTarget.classlist.add("active-link");
+    document.getElementById(tabname).classlist.add("active-tab");
+}
+</script>
 
     </body>
     </html>
