@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Droid Protocol</title>
         <link rel="stylesheet" href="skins.css">
+        <script src="https://kit.fontawesome.com/23c9d3fd0d.js" crossorigin="anonymous"></script>
     </head>
     <body>
 <div id="header">
@@ -14,16 +15,17 @@
         <nav>
             <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Project</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
             <p> Aspiring Developer </p>
             <h1>Hello, I'm <span> Lalaine Joy</span> <br> an aspiring software <br> developer from CvSU </h1>
+        </div>  
+        <a href="PORTFOLIO/CV Aumentado" download class="btn"><i class="fa-solid fa-file-arrow-down"> Download CV</i></a>
         </div>
     </div>
 </div>
@@ -36,58 +38,51 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lalaine Joy H. Aumentado is an aspiring Web Designer and Software Developer. Currently in her 3rd Year College at Cavite State University-Carmona Campus. 
-                She is versed in basic computer literacy and has excellent communication skills.</p>
+                <h2> Lalaine Joy H. Aumentado</h2>
+                <p>Born on the 14th of February year 2001 in the Kingdom of  Saudi Arabia. She currently resides in the City of Biñan, Laguna. <span>
+                <br><br>Lalaine Joy H. Aumentado is an aspiring Web Designer and Software Developer. Currently in her 3rd Year College at Cavite State University-Carmona Campus. </span> <br> <br>
+                She is versed in basic computer literacy and has excellent communication skills. I am dedicated and eager only to learn and improve myself for my well-being. I believe that perseverance will get you far.</p>
                 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                </div>
- <div class="tab-contents active-tab" id="Skills">
-        <ul>
-            <li><span>Microsoft 365</span><br>Word<br>Excel<br>Powerpoint<br>Teams</li>
-            <li><span>Excellent Communication</span><br>English<br>Tagalog<br>
-            <li><span>Programming Languages</span><br>Python<br>Java<br>HTML/CSS<br>SQL</li>
-            <li><span>Programming Software</span><br>Visual Studio Code<br>Eclipse<br>Brackets<br>Git</li>
-        </ul>
-    </div>
-    <div class="tab-contents" id="Experience">
-        <ul>
-            <li><span>2020 - Present</span><br>Young Programmers And Developers Society<br>Secretary(Former), Vice President( Former) President</li>
-            <li><span>2019- 2020</span><br>Creotec Philippines Inc.<br>Quality Assurance Specialist</li>
-            <li><span>2018- 2020</span><br>FIAT Publication<br>Campus Journalist<br>Radio Broadcasting</li>
-        </ul>
-    </div>
+                <h3>Skills & Tools</h3>
 
-    <div class="tab-contents" id="Education">
-        <ul>
-            <li><span>Cavite State University- Carmona Campus</span><br>2020- Present<br>Bachelor of Science in Computer Science</li>
-            <li><span>University of Perpetual Help System-<br>JONELTA Campus</span><br>2018-2020<br>Science, Technology, Engineering and Mathematics (STEM) strand</li>        
-        </ul>
+                
+
+
+
     </div>
 
  </div>
     </div>
 </div>
 </div>
+<!----------------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-inbox"></i>lj.aumentado@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+63 966 458 6538</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/eljay.aumentado/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/laligayaaa_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lalaine-joy-aumentado-69176a225/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/lalichuu"><i class="fa-brands fa-github"></i></a>
+                  
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
 
-<script>
+                    </form>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classlist.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classlist.remove("active-tab");
-    }
-    event.currentTarget.classlist.add("active-link");
-    document.getElementById(tabname).classlist.add("active-tab");
-}
-</script>
-
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
     </body>
     </html>
